@@ -1,31 +1,20 @@
-# Release 4: Cleaning up the front end
+# Release 4: Asynchronous page updates
 
 
 ### Learning Competencies
 
-  - Understand how to implement a HTML/CSS codebase from a wireframe
-  - Understand how to write DRY CSS code
-  - Understand how to work with vendor assets
+  - Understand how to implement AJAX in Rails
 
 ### Summary
 
-  With the back-end functionality intact, its time to clean up the front-end. You'll be writing a clean, professional HTML and CSS skin for your site.
+ For this release, you are now going to limit the number of synchronous request your users' have to make. You will be implementing AJAX in Rails.
 
-  You'll be working off wireframes for your three views. While writing this codebase, focus on the following:
-
-  ***Separating structure from skin.*** All attributes related to positioning and layout (display, position, float, etc. ) should be separated from attributes related to decoration (background, font-size, font-family, etc.). Ideally, your structure-related CSS will be stored in a separate file than your skin-related CSS.
-
-  ***Separating container from content.*** Your styles should not rely on elements being nested within each other, so they can be easily reused and moved.
-
-  ***Keeping your CSS DRY.*** Can you reuse CSS classes and HTML components? Can you limit the length and complexity of your CSS codebase?
-
-  You will also be using icons from an external vendor for your upvote and downvote buttons -- in this case, from [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
+  As you are changing your controller methods, you should be sure to update your testing suite to conform to the new setup.
 
 ## Features
 
-  - Add upvote and downvote icons from font-awesome
-  - Build and style the question index view from the following mockup.
-  - Build and style the question show view from the following mockup.
-  - Build and style the question edit view from the following mockup.
-  - Refactor your CSS and HTML into a series of reusable classes and components
+ - The new question form should update the question index page asynchronously.
+ - The new answer form should update the question show page asynchronously.
+ - The question upvote and downvote links should update the question index page asynchronously.
+ - The answer upvote and downvote links should update the question show page asynchronously.
 
