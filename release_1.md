@@ -30,7 +30,7 @@
 ## Features
 
   - Create a valid readme with your project's intention.
-  - Create your question and answer models.
+  - Create your question and answer models. A question and an answer should have a title and a content.
   - Create a question index page that lists all questions.
   - Create a question show page that lists the question and all associated answers.
   - Modify your routes so your question index page is the root route.
