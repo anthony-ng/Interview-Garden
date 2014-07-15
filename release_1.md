@@ -25,7 +25,7 @@
     $ rails _3.2.14_ new dbc_overflow -T -d=postgresql
   ```
 
-  You'll need to install rspec-rails, capybara, shoulda-matchers, and factory-girl in your project. Refer to previous challenges for example installation.
+  You'll need to install rspec-rails, capybara, shoulda-matchers, and factory-girl in your project. Refer to this document on [how to set up a Rails application.](../../../Rails_with_tests)
 
 ## Features
 
