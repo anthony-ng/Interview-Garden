@@ -22,7 +22,7 @@
  To create a new Rails 3.2 application with a postgres database and without the default testing framework, run:
 
   ```text
-    $ rails _3.2.14_ new dbc_overflow -T -d=postgresql
+    $ rails _3.2.18_ new dbc_overflow -T -d=postgresql
   ```
 
   You'll need to install rspec-rails, capybara, shoulda-matchers, and factory-girl in your project. Refer to this document on [how to set up a Rails application.](../../../Rails_with_tests)
