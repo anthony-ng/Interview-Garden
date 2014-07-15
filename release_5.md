@@ -11,7 +11,7 @@
 
   With the back-end functionality intact, its time to clean up the front-end. You'll be writing a clean, professional HTML and CSS skin for your site.
 
-  You'll be working off wireframes for your three views. While writing this codebase, focus on the following:
+  [You'll be working off wireframes for your three views.](wireframes.pdf) While writing this codebase, focus on the following:
 
   ***Separating structure from skin.*** All attributes related to positioning and layout (display, position, float, etc. ) should be separated from attributes related to decoration (background, font-size, font-family, etc.). Ideally, your structure-related CSS will be stored in a separate file than your skin-related CSS.
 
@@ -24,8 +24,8 @@
 ## Features
 
   - Add upvote and downvote icons from font-awesome
-  - Build and style the question index view from the following mockup.
-  - Build and style the question show view from the following mockup.
-  - Build and style the question edit view from the following mockup.
+  - Build and style the question index view.
+  - Build and style the question show view.
+  - Build and style the question edit view.
   - Refactor your CSS and HTML into a series of reusable classes and components
 
