@@ -22,6 +22,8 @@
  To create a new Rails 3.2 application with a postgres database and without the default testing framework, run:
 
   ```text
+    $ gem install rails --version=3.2.18
+
     $ rails _3.2.18_ new dbc_overflow -T -d=postgresql
   ```
 
