@@ -15,7 +15,7 @@
 
   ***Commit early and commit often.***  Commit on every feature completion, added dependency, and work stoppage. Commit with meaningful messages that accurately describe your alterations.
 
-  ***TDD everything.*** You will not be writing a single line of code on this project before you've written a test for it. If you need to explore the tool before you start writing production code, work on spike branches. Every
+  ***TDD everything.*** You will not be writing a single line of code on this project before you've written a test for it. If you need to explore the tool before you start writing production code, work on spike branches.
 
   ***Be intentional about your time and learning.*** Focus on understanding every line of code that you write, and why you are writing it. The result should be a codebase that is clean, intentional, and ready for production.
 
