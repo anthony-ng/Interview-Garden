@@ -9,7 +9,7 @@
 
 ### Summary
 
-  This week, we'll be building a substantial Rails application from the ground up: a [StackOverflow](stackoverflow.com) clone.  The goal is to focus on building a well-structured Rails application with a good mixture of front-end and back-end features.
+  This week, we'll be building a substantial Rails application from the ground up: a [StackOverflow](http://www.stackoverflow.com) clone.  The goal is to focus on building a well-structured Rails application with a good mixture of front-end and back-end features.
 
   You are training to be a professional developer, and its time to start acting like one. For the remainder of this project, you should:
 
@@ -27,7 +27,7 @@
     $ rails _3.2.18_ new dbc_overflow -T -d=postgresql
   ```
 
-  You'll need to install rspec-rails, capybara, shoulda-matchers, and factory-girl in your project. Refer to this document on [how to set up a Rails application.](../../../Rails_with_tests)
+  You'll need to install rspec-rails, capybara, shoulda-matchers, and factory-girl in your project.
 
 ## Features
 
