@@ -1,4 +1,4 @@
-# Release 1: Starting from scratch
+# Release 1: Starting from Scratch
 
 ### Learning Competencies
 
@@ -32,7 +32,7 @@ To create a new Rails 4 application with a postgres database and without the def
   $ rails new dbc_overflow -T -d=postgresql
 ```
 
-You'll need to install `rspec-rails`, `capybara`, `shoulda-matchers`, and `factory-girl` in your project.
+You'll also need to install `rspec-rails`, `capybara`, `shoulda-matchers`, and `factory-girl` in your project.
 
 ## Features
 
