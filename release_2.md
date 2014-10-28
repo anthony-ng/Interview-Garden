@@ -2,9 +2,9 @@
 
 ### Learning Competencies
 
-- Understand how to use the form_for helper
+- Understand how to use the `form_for` helper
 - Understand how to implement a create, destroy, update, and edit route
-- Understand how to use form_for to create multi-use partials
+- Understand how to use `form_for` to create multi-use partials
 
 ### Summary
 
