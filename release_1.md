@@ -32,12 +32,12 @@ To create a new Rails 4 application with a postgres database and without the def
   $ rails new dbc_overflow -T -d=postgresql
 ```
 
-You'll need to install rspec-rails, capybara, shoulda-matchers, and factory-girl in your project.
+You'll need to install `rspec-rails`, `capybara`, `shoulda-matchers`, and `factory-girl` in your project.
 
 ## Features
 
-- Create a valid readme with your project's intention.
-- Create your question and answer models. A question and an answer should have a title and a content.
+- Create a valid `readme` with your project's intention.
+- Create your question and answer models. A question and an answer should have a `title` and a `content`.
 - Create a question index page that lists all questions.
 - Create a question show page that lists the question and all associated answers.
-- Modify your routes so your question index page is the root route.
+- Modify your routes so your question index page is the `root` route.
