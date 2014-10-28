@@ -7,6 +7,10 @@
 - Use Rails form and view helpers
 - Utilize incremental DB migrations
 - Map complex and non-standard relationships using ActiveRecord
+- Work with APIs using raw HTTP requests
+- Use Rails initializers
+- Utilize AJAX requests within Rails
+- Create a JS widget using Javascript best practices and design patterns
 
 ## Summary
 
