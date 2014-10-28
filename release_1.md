@@ -22,8 +22,10 @@
 
   ```text
     $ rails -v
-    # rails version should be 4.x
+  ```
+  Your Rails version should be `4.x`.
 
+  ```text
     $ rails new dbc_overflow -T -d=postgresql
   ```
 
