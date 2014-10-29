@@ -3,7 +3,7 @@
 ### Learning Competencies
 
 - Implement a complex javascript feature.
-- Build JS code using the micro-mvc pattern.
+- Build JS code using the MVC pattern.
 
 ### Summary
 
