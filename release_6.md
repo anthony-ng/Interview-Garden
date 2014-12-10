@@ -7,8 +7,9 @@
 
 ### Summary
 
-For this release, you are going to build a live markdown editor for your comment creation form.
+For this release, you are going to build a live markdown editor for your question creation form.
 
 ## Features
 
-- Build a live markdown editor.
+- Build a live markdown editor
+- (Optional) Use the markdown widget for your answer forms as well
