@@ -1,3 +1,33 @@
-<h1>
-  It's <%= Time.now %>
-</h1>
+<h1>Stack Overflow</h1>
+<h3>It's <%= Time.now %></h3>
+<p><%= link_to "Test", question_test_path %></p>
+
+<div class="subheader">
+        <h1 id="h-top-questions">
+                Top Questions
+        </h1>
+        <div id="tabs">
+        <a class="youarehere" href="?tab=interesting" title="Questions that may be of interest to you based on your history and tag preference">interesting</a>
+        <a href="#" title="Questions with an active bounty">                <span class="bounty-indicator-tab">418</span>
+featured</a>
+        <a href="#" title="Questions with the most views, answers, and votes over the last few days">hot</a>
+        <a href="#" title="Questions with the most views, answers, and votes this week">week</a>
+        <a href="#" title="Questions with the most views, answers, and votes this month">month</a>
+</div>
+    </div>
+
+    <div onclick="window.location.href='/questions/28288871/next-doesnt-play-nice-with-any-all-in-python'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="2 votes">2</span></div>
+            <div>votes</div>
+        </div>
+        <div class="status unanswered">
+            <div class="mini-counts"><span title="0 answers">0</span></div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="16 views">16</span></div>
+            <div>views</div>
+        </div>
+    </div>
+
