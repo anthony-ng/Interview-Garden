@@ -19,7 +19,6 @@
   color: red;
 }
 
-body {
-  /*background: url('../../app/assets/images/stackoverflow-logo.png');*/
-  /*background-color: yellow;*/
+.logo {
+  width: 30%;
 }
