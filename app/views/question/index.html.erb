@@ -1,24 +1,31 @@
-<!-- <h1>Stack Overflow</h1> -->
-<img src="../assets/images/stackoverflow-logo.png" alt="logo">
-<h3>It's <%= Time.now %></h3>
-<p><%= link_to "Test", question_test_path %></p>
+<body>
+    <!-- <h1>Stack Overflow</h1> -->
+    <img src="../../app/assets/images/stackoverflow-logo.png" alt="logo">
+    <h3>It's <%= Time.now %></h3>
+    <p><%= link_to "Test", question_test_path %></p>
 
-<div class="subheader">
-    <h1 id="h-top-questions">
-        Top Questions
-    </h1>
-    <div class="cp">
-        <div class="votes">
-            <div>3</div>
-            <div>votes</div>
+    <div class="subheader">
+        <h1 id="h-top-questions">
+            Top Questions
+        </h1>
+        <div class="cp">
+            <div class="votes">
+                <div>3</div>
+                <div>votes</div>
+            </div>
+            <div class="status unanswered">
+                <div>7</div>
+                <div>answers</div>
+            </div>
+            <div class="views">
+                <div>9</div>
+                <div>views</div>
+            </div>
+            <div>
+                <% @questions.each do |question| %>
+                <%= puts question.title %>
+                <% end %>
+            </div>
         </div>
-        <div class="status unanswered">
-            <div>7</div>
-            <div>answers</div>
-        </div>
-        <div class="views">
-            <div>9</div>
-            <div>views</div>
-        </div>
-    </div>
 
+</body>
