@@ -18,10 +18,6 @@
   display: inline-block;
 }
 
-.votes p {
-  /*border-top: 1px solid #000;*/
-}
-
 .votes, .status, .views {
   color: red;
   border: 1px solid black;
@@ -34,10 +30,14 @@
 }
 
 .logo {
-  width: 30%;
+  width: 20%;
 }
 
 .questions p {
   padding-left: 30px;
   font-size: 1.5em;
+}
+
+.divisor {
+  border-top: 1px solid #000;
 }
