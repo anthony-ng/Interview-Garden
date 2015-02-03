@@ -19,7 +19,7 @@
 }
 
 .votes, .status, .views {
-  color: red;
+  color: black;
   border: 1px solid black;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -36,8 +36,10 @@
 .questions p {
   padding-left: 30px;
   font-size: 1.5em;
+  color: #0077CC;
 }
 
 .divisor {
   border-top: 1px solid #000;
+  margin-top: 1px;
 }
