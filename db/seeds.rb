@@ -11,3 +11,7 @@ require 'faker'
 10.times do
   Question.create(title: Faker::Hacker.say_something_smart + "?", content: Faker::Lorem.sentences)
 end
+
+10.times do
+  Answer.create(title: Faker::Hacker.say_something_smart, content: Faker::Lorem.sentences)
+end

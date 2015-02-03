@@ -13,6 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+.header {
+  /*padding-bottom: 20px;*/
+  display: inline-block;
+  /*width: 1000px;*/
+}
+
+.header_name {
+  width: 150px;
+}
+
 .cp div{
   display: inline-block;
 }
@@ -22,7 +33,7 @@
   border: 1px solid black;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-right: 25`px;
+  padding-right: 25px;
   padding-left: 10px;
   width: 30px;
   /*height: 30px;*/
