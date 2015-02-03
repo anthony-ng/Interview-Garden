@@ -14,11 +14,30 @@
  *= require_self
  */
 .cp div{
-  font-size: 1.5em;
-  display: inline;
+  font-size: 1.1em;
+  display: inline-block;
+}
+
+.votes p {
+  /*border-top: 1px solid #000;*/
+}
+
+.votes, .status, .views {
   color: red;
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  padding-left: 20px;
+  width: 30px;
+  text-align: right;
 }
 
 .logo {
   width: 30%;
+}
+
+.questions p {
+  padding-left: 30px;
+  font-size: 1.5em;
 }
