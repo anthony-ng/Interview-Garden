@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+.cp div{
+  font-size: 1.5em;
+  display: inline;
+  color: red;
+}
