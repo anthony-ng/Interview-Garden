@@ -30,7 +30,7 @@
 
     <div class="your_answer">
         <h2>Your Answer</h2>
-        <%= form_for ([@question, @question.answers.build]), url: {action: "create"}, html: {class: "new_form"} do |f| %>
+        <%= form_for [@question, @question.answers.build], html: {class: "new_form"} do |f| %>
         <fieldset>
             <legend>Answer</legend>
             <ul><li>Please be sure to answer the question. Provide details and share your research!</li></ul>
