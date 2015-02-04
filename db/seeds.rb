@@ -7,6 +7,6 @@ require 'faker'
   Question.create(title: Faker::Hacker.say_something_smart + "?", content: Faker::Lorem.sentences)
 end
 
-10.times do
+20.times do
   Answer.create(title: Faker::Hacker.say_something_smart, content: Faker::Lorem.sentences, question_id: rand(1..10))
 end
