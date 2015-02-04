@@ -54,6 +54,11 @@
 }
 .answers h2, .answers h3, .answers p, .answers div{
   padding-left: 50px;
+  padding-right: 30px;
+}
+
+.answers div {
+  padding-top: 20px;
 }
 
 .voting p{
