@@ -21,10 +21,20 @@ class QuestionsController < ApplicationController
     redirect_to :action => :index
   end
 
-  def delete
+  def edit
+    @question = Question.find(params[:id])
   end
 
-  def edit
+  def update
+    @question = Question.find(params[:id])
+    @question.update(question_params)
+
+    redirect_to :action => :show, :id => @question
+  end
+
+  def delete
+    @question = Question.find(params[:id])
+    @question.destroy
   end
 
   private
