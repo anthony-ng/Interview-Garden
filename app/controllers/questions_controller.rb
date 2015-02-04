@@ -15,7 +15,7 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = Question.new(params[:question])
+    @question = Question.new(question_params)
     @question.save
 
     redirect_to :action => :index
@@ -25,6 +25,12 @@ class QuestionsController < ApplicationController
   end
 
   def edit
+  end
+
+  private
+
+  def question_params
+    params.require(:question).permit(:title, :content)
   end
 
 end
