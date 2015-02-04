@@ -41,12 +41,19 @@
   width: 20%;
 }
 
-.questions p {
+.questions p, .answers p {
   padding-left: 30px;
   font-size: 1.3em;
   color: #0077CC;
   height: 1px;
   padding-bottom: 10px;
+}
+
+.answers {
+  border: 1px solid black;
+}
+.answers h2, .answers h3, .answers p, .answers div{
+  padding-left: 50px;
 }
 
 .voting p{

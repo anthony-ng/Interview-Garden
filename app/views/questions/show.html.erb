@@ -1,6 +1,6 @@
 <div class="cp">
     <div class="questions">
-        <h3><%= @question.title %></h3>
+        <h2><%= @question.title %></h2>
         <p><%= @question.content %></p>
         <div class="voting">
             <p><%= link_to "Upvote" %></p>
@@ -8,6 +8,7 @@
         </div>
     </div>
     <div class="answers">
+        <h2 id="h-top-answers">Top Answers</h2>
         <% @question.answers.each do |answer| %>
         <h3><%= answer.title %></h3>
         <p><%= answer.content %></p>
@@ -15,6 +16,7 @@
             <p><%= link_to "Upvote" %></p>
             <p><%= link_to "Downvote" %></p>
         </div>
+        <p class="divisor"></p>
         <% end %>
     </div>
 </div>
