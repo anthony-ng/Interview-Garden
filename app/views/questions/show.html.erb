@@ -2,10 +2,20 @@
     <div class="questions">
         <h3><%= @question.title %></h3>
         <p><%= @question.content %></p>
-        <div class="questions_option">
+        <div class="voting">
             <p><%= link_to "Upvote" %></p>
             <p><%= link_to "Downvote" %></p>
         </div>
+    </div>
+    <div class="answers">
+        <% @question.answers.each do |answer| %>
+        <h3><%= answer.title %></h3>
+        <p><%= answer.content %></p>
+        <div class="voting">
+            <p><%= link_to "Upvote" %></p>
+            <p><%= link_to "Downvote" %></p>
+        </div>
+        <% end %>
     </div>
 </div>
 
