@@ -1,7 +1,6 @@
 <body>
-    <!-- <h1>Stack Overflow</h1> -->
-    <div class="header"><img src="images/stackoverflow-logo.png" alt="logo" class="logo"><!-- <h4 class="header_name">By Anthony Ng</h4> --></div>
-    <!-- <p><%= link_to "Test", question_test_path %></p> -->
+    <div class="header"><img src="images/stackoverflow-logo.png" alt="logo" class="logo"></div>
+
 
     <h1 id="h-top-questions">
         Top Questions
@@ -10,7 +9,6 @@
     <div class="cp">
         <p class="divisor"></p>
         <div class="votes">
-            <!-- <p></p> -->
             <div><%= rand(1..100) %> <br></div>
             <div>votes</div>
         </div>
@@ -24,6 +22,7 @@
         </div>
         <div class="questions">
             <p><%= question.title %></p>
+            <p><%= link_to "Show", question_path(question) %></p>
         </div>
     </div><br>
     <% end %>

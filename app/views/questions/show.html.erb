@@ -1,30 +1,8 @@
 <body>
-    <div class="header"><img src="images/stackoverflow-logo.png" alt="logo" class="logo"></div>
 
-    <h1 id="h-top-questions">
-        Top Questions
-    </h1>
-    <% @questions.each do |question| %>
-    <div class="cp">
-        <p class="divisor"></p>
-        <div class="votes">
-            <div><%= rand(1..100) %> <br></div>
-            <div>votes</div>
-        </div>
-        <div class="status unanswered">
-            <div><%= rand(1..100) %> <br></div>
-            <div>answers</div>
-        </div>
-        <div class="views">
-            <div><%= rand(1..100) %> <br></div>
-            <div>views</div>
-        </div>
-        <div class="questions">
-            <p><%= question.title %></p>
-        </div>
-    </div><br>
-    <% end %>
+    <%= @question.title %>
+    <%= simple_format(@question.content) %>
 
-
+    <p><%= link_to 'Back to index', questions_path %></p>
 
 </body>
