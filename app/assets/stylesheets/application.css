@@ -94,6 +94,15 @@ table h2 {
   color: white;
 }
 
+.edit_form input, textarea, legend, label {
+  font-size: 1.5em;
+}
+
+.edit_form input[type=submit] {
+  background-color: #009AFD;
+  color: white;
+}
+
 .footer {
   text-align: center;
 }

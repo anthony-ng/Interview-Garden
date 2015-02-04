@@ -7,6 +7,7 @@
     <%= f.label :content, "Details" %> <br>
     <%= f.text_area :content, placeholder: "Details goes here.", size: "60x10" %> <br>
     <%= f.submit "Update Your Question", data: {confirm: "Are you sure?"} %>
+    <%= link_to 'Delete', question, method: :delete %>
   </fieldset>
   <% end %>
 

@@ -35,6 +35,8 @@ class QuestionsController < ApplicationController
   def delete
     @question = Question.find(params[:id])
     @question.destroy
+
+    redirect_to :action => :index
   end
 
   private
