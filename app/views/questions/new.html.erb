@@ -1,5 +1,18 @@
 <%= form_for @question, url: {action: "create"}, html: {class: "new_form"} do |f| %>
-  <%= f.text_field :title %>
-  <%= f.text_area :content, size: "100x10" %>
+  <!-- <h3>Title</h3> -->
+  <%= f.label :title, "Title" %> <br>
+  <%= f.text_field :title, placeholder: "What's your programming question? Be specfic.", size: "100" %> <br>
+
+  <!-- <h3>Content</h3> -->
+  <%= f.label :content, "Details" %> <br>
+  <%= f.text_area :content, placeholder: "Details goes here.", size: "100x10" %>
   <%= f.submit "Create" %>
 <% end %>
+
+<!--
+<form accept-charset="UTF-8" action="/articles/create" method="post" class="nifty_form">
+  <input id="article_title" name="article[title]" type="text" />
+  <textarea id="article_body" name="article[body]" cols="60" rows="12"></textarea>
+  <input name="commit" type="submit" value="Create" />
+</form>
+-->
