@@ -1,22 +1,10 @@
-<body>
-    <div class="header"><img src="images/stackoverflow-logo.png" alt="logo" class="logo"></div>
-
-
-    <h3 id="h-top-questions">
-        Top Questions
-    </h3>
-    <div class="cp">
-        <div class="questions">
-            <h3><%= @question.title %></h3>
-            <p><%= @question.content %></p>
-            <div class="questions_option">
-                <p><%= link_to "Upvote" %></p>
-                <p><%= link_to "Downvote" %></p>
-            </div>
+<div class="cp">
+    <div class="questions">
+        <h3><%= @question.title %></h3>
+        <p><%= @question.content %></p>
+        <div class="questions_option">
+            <p><%= link_to "Upvote" %></p>
+            <p><%= link_to "Downvote" %></p>
         </div>
-        <p><%= link_to 'Back to index', questions_path %></p>
-    </div><br>
-
-
-
-</body>
+    </div>
+</div><br>
