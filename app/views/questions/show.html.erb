@@ -30,10 +30,11 @@
 
     <div class="your_answer">
         <h2>Your Answer</h2>
-        <%= form_for @question.answers, url: {action: "create"}, html: {class: "new_form"} do |f| %>
+        <%= form_for ([@question, @question.answers.build]), url: {action: "create"}, html: {class: "new_form"} do |f| %>
         <fieldset>
             <legend>Answer</legend>
             <ul><li>Please be sure to answer the question. Provide details and share your research!</li></ul>
+            <%= f.text_field :title, placeholder: "What's the title of your answer? Be specfic.", size: "60" %> <br><br>
             <%= f.text_area :content, placeholder: "What's your answer?", size: "60x10" %> <br>
             <%= f.submit "Post Your Question", data: {confirm: "Are you sure?"} %>
         </fieldset>
