@@ -2,11 +2,11 @@ Rails.application.routes.draw do
   get "questions" => "questions#index"
   get "questions/test" => "questions#test"
 
-# get '/question/test'
-    # erb :"question/test"
-# end
-
   root :to => "questions#index"
+  resources :questions do
+    resources :answers
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -20,9 +20,6 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-    resources :questions do
-      resources :answers
-    end
 
   # Example resource route with options:
   #   resources :products do
