@@ -2,9 +2,9 @@
     <div class="header"><img src="images/stackoverflow-logo.png" alt="logo" class="logo"></div>
 
 
-    <h1 id="h-top-questions">
+    <h3 id="h-top-questions">
         Top Questions
-    </h1>
+    </h3>
     <% @questions.each do |question| %>
     <div class="cp">
         <p class="divisor"></p>
@@ -22,7 +22,11 @@
         </div>
         <div class="questions">
             <p><%= question.title %></p>
-            <p><%= link_to "Show", question_path(question) %></p>
+            <div class="questions_option">
+                <p><%= link_to "Show", question_path(question) %></p>
+                <p><%= link_to "Upvote" %></p>
+                <p><%= link_to "Downvote" %></p>
+            </div>
         </div>
     </div><br>
     <% end %>

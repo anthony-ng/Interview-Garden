@@ -38,17 +38,24 @@
 }
 
 .logo {
-  width: 25%;
+  width: 20%;
 }
 
 .questions p {
   padding-left: 30px;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #0077CC;
   height: 1px;
+  padding-bottom: 10px;
+}
+
+.questions_option p{
+  display: inline-block;
+  margin-top: -10px;
 }
 
 .divisor {
   border-top: 1px solid #000;
-  margin-top: 1px;
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
