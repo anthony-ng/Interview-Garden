@@ -1,7 +1,7 @@
 <table>
     <tr>
         <th><h2>Top Questions</h2></th>
-        <th><h3>Ask Question?</h3></th>
+        <th><h3><%= link_to "Ask Question?", new_question_path %></h3></th>
     </tr>
 </table>
 <% @questions.each do |question| %>

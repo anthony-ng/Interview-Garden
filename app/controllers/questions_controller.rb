@@ -11,5 +11,13 @@ class QuestionsController < ApplicationController
   end
 
   def new
+    @question = Question.new
   end
+
+  def delete
+  end
+
+  def edit
+  end
+
 end
