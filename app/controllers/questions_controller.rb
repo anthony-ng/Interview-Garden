@@ -32,7 +32,7 @@ class QuestionsController < ApplicationController
     redirect_to :action => :show, :id => @question
   end
 
-  def delete
+  def destroy
     @question = Question.find(params[:id])
     @question.destroy
 

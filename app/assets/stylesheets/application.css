@@ -51,6 +51,7 @@
 
 .answers {
   border: 1px solid black;
+  width: 100%;
 }
 .answers h2, .answers h3, .answers p, .answers div{
   padding-left: 50px;
@@ -72,16 +73,16 @@
   margin-bottom: -10px;
 }
 
-table{
+.index_table{
   /*padding-right: 555px;*/
   text-align: right;
   width: 100%;
 }
-table h3 {
+.index_table h3 {
   text-align: right;
 }
 
-table h2 {
+.index_table h2 {
   text-align: left;
 }
 
@@ -105,4 +106,8 @@ table h2 {
 
 .footer {
   text-align: center;
+}
+
+.show_table h4 {
+  padding-right: 30px;
 }

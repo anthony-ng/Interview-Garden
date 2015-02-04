@@ -6,7 +6,13 @@
             <p><%= link_to "Upvote" %></p>
             <p><%= link_to "Downvote" %></p>
         </div>
-        <h4><%= link_to "Edit", edit_question_path(@question) %></h4>
+        <table class="show_table">
+            <tr>
+                <th><h4><%= link_to "Edit", edit_question_path(@question) %></h4></th>
+                <th><h4><%= link_to 'Delete', @question, method: :delete %></h4></th>
+            </tr>
+        </table>
+
     </div>
     <div class="answers">
         <h2>Top Answers</h2>
@@ -20,6 +26,18 @@
         <p class="divisor"></p>
         <% end %>
         <h3><%= @empty %></h3>
+    </div>
+
+    <div class="your_answer">
+        <h2>Your Answer</h2>
+        <%= form_for @question.answers, url: {action: "create"}, html: {class: "new_form"} do |f| %>
+        <fieldset>
+            <legend>Answer</legend>
+            <ul><li>Please be sure to answer the question. Provide details and share your research!</li></ul>
+            <%= f.text_area :content, placeholder: "What's your answer?", size: "60x10" %> <br>
+            <%= f.submit "Post Your Question", data: {confirm: "Are you sure?"} %>
+        </fieldset>
+        <% end %>
     </div>
 </div>
 
