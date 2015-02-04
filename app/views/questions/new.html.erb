@@ -1,13 +1,14 @@
 <%= form_for @question, url: {action: "create"}, html: {class: "new_form"} do |f| %>
-  <!-- <h3>Title</h3> -->
-  <%= f.label :title, "Title" %> <br>
-  <%= f.text_field :title, placeholder: "What's your programming question? Be specfic.", size: "100" %> <br>
+  <fieldset>
+    <legend>Title</legend>
+    <%= f.text_field :title, placeholder: "What's your programming question? Be specfic.", size: "100" %> <br><br>
 
-  <!-- <h3>Content</h3> -->
-  <%= f.label :content, "Details" %> <br>
-  <%= f.text_area :content, placeholder: "Details goes here.", size: "100x10" %>
-  <%= f.submit "Create" %>
-<% end %>
+    <!-- <h3>Content</h3> -->
+    <%= f.label :content, "Details" %> <br>
+    <%= f.text_area :content, placeholder: "Details goes here.", size: "100x10" %> <br>
+    <%= f.submit "Create" %>
+  </fieldset>
+  <% end %>
 
 <!--
 <form accept-charset="UTF-8" action="/articles/create" method="post" class="nifty_form">
