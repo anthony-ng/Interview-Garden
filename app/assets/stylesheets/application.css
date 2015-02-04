@@ -71,3 +71,16 @@
   margin-top: -10px;
   margin-bottom: -10px;
 }
+
+table{
+  /*padding-right: 555px;*/
+  text-align: right;
+  width: 100%;
+}
+table h3 {
+  text-align: right;
+}
+
+table h2 {
+  text-align: left;
+}
