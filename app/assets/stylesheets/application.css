@@ -84,3 +84,12 @@ table h3 {
 table h2 {
   text-align: left;
 }
+
+.new_form input, textarea, legend, label {
+  font-size: 1.5em;
+}
+
+.new_form input[type=submit] {
+  background-color: #009AFD;
+  color: white;
+}

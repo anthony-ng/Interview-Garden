@@ -1,12 +1,12 @@
 <%= form_for @question, url: {action: "create"}, html: {class: "new_form"} do |f| %>
   <fieldset>
     <legend>Title</legend>
-    <%= f.text_field :title, placeholder: "What's your programming question? Be specfic.", size: "100" %> <br><br>
+    <%= f.text_field :title, placeholder: "What's your programming question? Be specfic.", size: "60" %> <br><br>
 
     <!-- <h3>Content</h3> -->
     <%= f.label :content, "Details" %> <br>
-    <%= f.text_area :content, placeholder: "Details goes here.", size: "100x10" %> <br>
-    <%= f.submit "Create" %>
+    <%= f.text_area :content, placeholder: "Details goes here.", size: "60x10" %> <br>
+    <%= f.submit "Post Your Question" %>
   </fieldset>
   <% end %>
 
