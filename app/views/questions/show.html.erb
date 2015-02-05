@@ -16,15 +16,6 @@
     </div>
     <div class="answers">
         <h2>Top Answers</h2>
-        <% @question.answers.each do |answer| %>
-        <h3><%= answer.title %></h3>
-        <p><%= answer.content %></p>
-        <div class="voting">
-            <p><%= link_to "Upvote" %></p>
-            <p><%= link_to "Downvote" %></p>
-        </div>
-        <p class="divisor"></p>
-        <% end %>
         <h3><%= @empty %></h3>
     </div>
 

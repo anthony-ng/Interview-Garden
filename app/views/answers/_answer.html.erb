@@ -1,0 +1,9 @@
+<!-- The partial here will be rendered once for EACH answer that is in the @question.answers collection.
+As the render method iterates over the @question.answers collection, it assigns each answer to a local variable named the same as the partial, i.e. answer -->
+<h3><%= answer.title %></h3>
+<p><%= answer.content %></p>
+<div class="voting">
+  <p><%= link_to "Upvote" %></p>
+  <p><%= link_to "Downvote" %></p>
+</div>
+<p class="divisor"></p>
