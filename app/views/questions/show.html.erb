@@ -15,7 +15,8 @@
 
     </div>
     <div class="answers">
-        <h2>Top Answers</h2>
+        <h2><%= @question.answers.size %> Answers</h2>
+        <p class="divisor"></p>
         <%= render @question.answers %>
         <h3><%= @empty %></h3>
     </div>

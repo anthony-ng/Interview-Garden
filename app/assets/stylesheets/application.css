@@ -80,6 +80,7 @@
 
 .answers {
   border: 1px solid black;
+  border-color: transparent;
   width: 100%;
 }
 .answers h2, .answers h3, .answers p{
