@@ -8,11 +8,11 @@
 <div class="cp" data-question-id="<%= question.id %>">
     <p class="divisor"></p>
     <div class="q_votes">
-        <%= rand(1..100) %> <br>
+        <%= question.vote %> <br>
         <div>votes</div>
     </div>
     <div class="status">
-        <%= rand(1..10) %> <br>
+        <%= question.answers.size %> <br>
         <div>answers</div>
     </div>
     <div class="views">
@@ -22,8 +22,8 @@
     <div class="questions">
         <p><%= link_to question.title, question_path(question) %></p>
         <div class="voting">
-            <p><%= link_to "Upvote" %></p>
-            <p><%= link_to "Downvote" %></p>
+            <p><%= link_to "Up" %></p>
+            <p><%= link_to "Down" %></p>
         </div>
     </div>
 </div>
