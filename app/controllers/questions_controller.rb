@@ -1,4 +1,9 @@
 class QuestionsController < ApplicationController
+
+  # def get_question
+  #   @question = Question.find(params[:id])
+  # end
+
   def index
     @questions = Question.all
   end
