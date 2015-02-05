@@ -56,8 +56,17 @@
   margin: 0 auto;
 }
 
+.questions a, .answers a {
+  color: inherit;
+}
+
 .questions a:link, .answers a:link {
   text-decoration: none;
+}
+
+.questions a:hover, .answers a:hover {
+  text-decoration: none;
+  color: #30A7FC;
 }
 
 .answers {
