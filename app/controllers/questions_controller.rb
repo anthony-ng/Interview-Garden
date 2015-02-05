@@ -44,6 +44,11 @@ class QuestionsController < ApplicationController
     @question.increment!(:vote_count)
   end
 
+  def downvote
+    @question = Question.find(params[:id])
+    @question.decrement!(:vote_count)
+  end
+
   private
 
   def question_params
