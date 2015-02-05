@@ -7,7 +7,7 @@ As the render method iterates over the @question.answers collection, it assigns 
 <h3><%= answer.title %></h3>
 <p><%= answer.content %></p>
 <div class="a_votes">
-  <%= rand(1..100) %> <br>
+  <%= answer.vote %> <br>
   votes
 </div>
 <div class="voting">
