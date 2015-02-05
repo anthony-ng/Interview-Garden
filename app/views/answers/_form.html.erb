@@ -1,0 +1,15 @@
+<!-- (2) Rendering a Partial Form
+
+This partial template (answers/form) is defined by the render in controller.
+
+Rails is smart enough to spot the forward slash in the string and realize that you want to render the _form.html.erb -->
+
+  <%= form_for [@question, @question.answers.build], html: {class: "new_form"} do |f| %>
+  <fieldset>
+    <legend>Answer</legend>
+    <ul><li>Please be sure to answer the question. Provide details and share your research!</li></ul>
+    <%= f.text_field :title, placeholder: "What's the title of your answer? Be specfic.", size: "60" %> <br><br>
+    <%= f.text_area :content, placeholder: "What's your answer?", size: "60x10" %> <br>
+    <%= f.submit "Post Your Question", data: {confirm: "Are you sure?"} %>
+  </fieldset>
+  <% end %>
