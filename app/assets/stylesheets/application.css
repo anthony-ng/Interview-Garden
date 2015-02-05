@@ -56,6 +56,10 @@
   margin: 0 auto;
 }
 
+.questions a:link, .answers a:link {
+  text-decoration: none;
+}
+
 .answers {
   border: 1px solid black;
   width: 100%;

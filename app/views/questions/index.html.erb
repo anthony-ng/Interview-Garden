@@ -20,9 +20,9 @@
         <div>views</div>
     </div>
     <div class="questions">
-        <p><%= question.title %></p>
+        <p><%= link_to question.title, question_path(question) %></p>
+        <!-- <p><%= question.title %></p> -->
         <div class="voting">
-            <p><%= link_to "Show", question_path(question) %></p>
             <p><%= link_to "Upvote" %></p>
             <p><%= link_to "Downvote" %></p>
         </div>
