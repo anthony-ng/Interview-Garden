@@ -36,11 +36,11 @@ class QuestionsController < ApplicationController
   end
 
   def upvote
-    @question.increment!(:vote_count)
+    @question.increment!(:vote)
   end
 
   def downvote
-    @question.decrement!(:vote_count)
+    @question.decrement!(:vote)
   end
 #############################################
   private
