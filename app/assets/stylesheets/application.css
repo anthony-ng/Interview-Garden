@@ -46,12 +46,15 @@
   width: 20%;
 }
 
+.questions {
+  margin-top:
+}
+
 .questions p, .answers p {
   padding-left: 30px;
   font-size: 1.3em;
   color: #0077CC;
-  height: 1px;
-  padding-bottom: 10px;
+  margin: 0 auto;
 }
 
 .answers {
@@ -68,14 +71,14 @@
 }
 
 .voting p{
-  display: inline-block;
-  margin-top: -10px;
+  display: inline;
+  /*margin-top: -10px;*/
 }
 
 .divisor {
   border-top: 1px solid #000;
-  margin-top: -10px;
-  margin-bottom: -10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .index_table{
@@ -115,4 +118,9 @@
 
 .show_table h4 {
   padding-right: 30px;
+}
+
+/*Debugging*/
+* {
+  /*outline: 1px black solid;*/
 }
