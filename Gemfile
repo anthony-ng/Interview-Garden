@@ -15,8 +15,6 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'faker'
 
-gem 'epic-editor-rails'
-
 gem 'rspec-rails'
 
 gem 'capybara'

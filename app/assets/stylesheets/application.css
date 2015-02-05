@@ -26,15 +26,21 @@
   display: inline-block;
 }
 
-.votes, .status, .views {
+.q_votes, .status, .views {
   color: black;
   border: 1px solid black;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-right: 25px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
   width: 30px;
   text-align: right;
+}
+
+.a_votes {
+  border: 1px solid black;
+  width: 10px;
+  height: 35px;
 }
 
 .logo {
