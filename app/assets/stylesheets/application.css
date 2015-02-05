@@ -28,12 +28,11 @@
 
 .q_votes, .status, .views {
   color: black;
-  border: 1px solid black;
-  padding-top: 20px;
-  height: 60px;
-  width: 80px;
-
+  padding-top: 15px;
+  height: 45px;
+  width: 60px;
   text-align: center;
+  /*border: 1px solid black;*/
 }
 
 .a_votes {
@@ -72,7 +71,6 @@
 
 .voting p{
   display: inline;
-  /*margin-top: -10px;*/
 }
 
 .divisor {
@@ -82,7 +80,6 @@
 }
 
 .index_table{
-  /*padding-right: 555px;*/
   text-align: right;
   width: 100%;
 }
