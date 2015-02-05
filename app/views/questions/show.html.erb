@@ -2,14 +2,10 @@
     <div class="questions">
         <h1><%= @question.title %></h1>
         <p><%= @question.content %></p> <br>
-<!--         <div class="voting">
-            <p><%= link_to "Upvote" %></p>
-            <p><%= link_to "Downvote" %></p>
-        </div> -->
         <table class="show_table">
             <tr>
                 <th><h3><%= link_to "Edit", edit_question_path(@question) %></h3></th>
-                <th><h3><%= link_to 'Delete', @question, method: :delete %></h3></th>
+                <th><h3><%= link_to 'Delete', @question, method: :delete, data: {confirm: "Are you sure?"} %></h3></th>
             </tr>
         </table>
 
