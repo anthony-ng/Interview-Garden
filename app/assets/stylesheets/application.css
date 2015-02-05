@@ -26,6 +26,10 @@
   display: inline-block;
 }
 
+.index_table a:link {
+  text-decoration: none;
+}
+
 .q_votes, .status, .views {
   color: black;
   padding-top: 15px;
