@@ -18,13 +18,9 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = Question.new(question_params)
-    @question.save
+    @question = Question.create(question_params)
 
     redirect_to :action => :index
-  end
-
-  def edit
   end
 
   def update
@@ -40,12 +36,10 @@ class QuestionsController < ApplicationController
   end
 
   def upvote
-    # @question = Question.find(params[:id])
     @question.increment!(:vote_count)
   end
 
   def downvote
-    # @question = Question.find(params[:id])
     @question.decrement!(:vote_count)
   end
 #############################################
