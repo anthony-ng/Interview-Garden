@@ -41,8 +41,13 @@
 
 .a_votes {
   border: 1px solid black;
-  width: 10px;
-  height: 35px;
+  padding-top: 10px;
+  width: 60px;
+  height: 40px;
+  margin-left: 50px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .logo {
@@ -77,13 +82,9 @@
   border: 1px solid black;
   width: 100%;
 }
-.answers h2, .answers h3, .answers p, .answers div{
+.answers h2, .answers h3, .answers p{
   padding-left: 50px;
   padding-right: 30px;
-}
-
-.answers div {
-  padding-top: 20px;
 }
 
 .voting p {
