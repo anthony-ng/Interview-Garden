@@ -55,7 +55,7 @@
 }
 
 .questions {
-  /*margin-top: 10px;*/
+  padding-left: 50px;
 }
 
 .questions p, .answers p {
@@ -116,6 +116,12 @@
   text-align: left;
 }
 
+.your_answer {
+  /*margin-left: 500px;*/
+  /*width:500px;*/
+  margin: 0 300px;
+}
+
 .new_form input, textarea, legend, label {
   font-size: 1.5em;
 }
@@ -123,6 +129,7 @@
 .new_form input[type=submit] {
   background-color: #009AFD;
   color: white;
+  margin: 0 260px;
 }
 
 .edit_form input, textarea, legend, label {
