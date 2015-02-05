@@ -39,6 +39,11 @@ class QuestionsController < ApplicationController
     redirect_to :action => :index
   end
 
+  def upvote
+    @question = Question.find(params[:id])
+    @question.increment!(:vote_count)
+  end
+
   private
 
   def question_params
