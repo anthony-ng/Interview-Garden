@@ -1,15 +1,15 @@
 class QuestionsController < ApplicationController
+  before_action :get_question, only:[:show, :edit, :update, :destroy, :upvote, :downvote]
 
-  # def get_question
-  #   @question = Question.find(params[:id])
-  # end
+  def get_question
+    @question = Question.find(params[:id])
+  end
 
   def index
     @questions = Question.all
   end
 
   def show
-    @question = Question.find(params[:id])
     if @question.answers.count == 0
       @empty = "Sorry, no one answers yet!"
     end
@@ -27,30 +27,27 @@ class QuestionsController < ApplicationController
   end
 
   def edit
-    @question = Question.find(params[:id])
   end
 
   def update
-    @question = Question.find(params[:id])
     @question.update(question_params)
 
     redirect_to :action => :show, :id => @question
   end
 
   def destroy
-    @question = Question.find(params[:id])
     @question.destroy
 
     redirect_to :action => :index
   end
 
   def upvote
-    @question = Question.find(params[:id])
+    # @question = Question.find(params[:id])
     @question.increment!(:vote_count)
   end
 
   def downvote
-    @question = Question.find(params[:id])
+    # @question = Question.find(params[:id])
     @question.decrement!(:vote_count)
   end
 
