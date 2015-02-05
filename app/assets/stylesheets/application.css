@@ -29,12 +29,11 @@
 .q_votes, .status, .views {
   color: black;
   border: 1px solid black;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
-  width: 30px;
-  text-align: right;
+  padding-top: 20px;
+  height: 60px;
+  width: 80px;
+
+  text-align: center;
 }
 
 .a_votes {
