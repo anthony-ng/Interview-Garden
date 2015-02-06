@@ -26,7 +26,7 @@ function ListenForAnswerVote() {
 }
 
 function ListenForQuestionForm() {
-  $(".index_table").on("click", function(event){
+  $("#create_question").on("submit", function(event){
     event.preventDefault();
     console.log("Inside ListenForQuestionForm function");
 
@@ -36,7 +36,7 @@ function ListenForQuestionForm() {
 function ListenForAnswerForm() {
   $(".voting").on("click", function(event){
     event.preventDefault();
-    console.log("Inside ListeListenForAnswerFormnForQuestionVote function");
+    console.log("Inside ListenForAnswerForm function");
 
   })
 }

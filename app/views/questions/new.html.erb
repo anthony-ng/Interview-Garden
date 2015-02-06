@@ -1,19 +1,21 @@
-<%= form_for @question, url: {action: "create"}, html: {class: "new_form"} do |f| %>
-  <fieldset>
-    <legend>Title</legend>
-    <%= f.text_field :title, placeholder: "What's your programming question? Be specfic.", size: "60" %> <br><br>
+<div id="create_question">
+  <%= form_for @question, url: {action: "create"}, html: {class: "new_form"} do |f| %>
+    <fieldset>
+      <legend>Title</legend>
+      <%= f.text_field :title, placeholder: "What's your programming question? Be specfic.", size: "60" %> <br><br>
 
-    <!-- <h3>Content</h3> -->
-    <%= f.label :content, "Details" %> <br>
-    <%= f.text_area :content, placeholder: "Details goes here.", size: "60x10" %> <br>
-    <%= f.submit "Post Your Question", data: {confirm: "Are you sure?"} %>
-  </fieldset>
-  <% end %>
+      <!-- <h3>Content</h3> -->
+      <%= f.label :content, "Details" %> <br>
+      <%= f.text_area :content, placeholder: "Details goes here.", size: "60x10" %> <br>
+      <%= f.submit "Post Your Question", data: {confirm: "Are you sure?"} %>
+    </fieldset>
+    <% end %>
 
-<!--
-<form accept-charset="UTF-8" action="/articles/create" method="post" class="nifty_form">
-  <input id="article_title" name="article[title]" type="text" />
-  <textarea id="article_body" name="article[body]" cols="60" rows="12"></textarea>
-  <input name="commit" type="submit" value="Create" />
-</form>
--->
+  <!--
+  <form accept-charset="UTF-8" action="/articles/create" method="post" class="nifty_form">
+    <input id="article_title" name="article[title]" type="text" />
+    <textarea id="article_body" name="article[body]" cols="60" rows="12"></textarea>
+    <input name="commit" type="submit" value="Create" />
+  </form>
+  -->
+</div>
