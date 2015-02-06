@@ -5,7 +5,7 @@
     </tr>
 </table>
 <% @questions.each do |question| %>
-<div class="cp" data-question-id="<%= question.id %>">
+<div class="session" data-question-id="<%= question.id %>">
     <p class="divisor"></p>
     <div class="q_votes">
         <%= question.vote %> <br>
@@ -19,12 +19,14 @@
         <%= rand(1..1000) %> <br>
         <div>views</div>
     </div>
+
+    <div class="voting">
+        <p><%= link_to "Up" %></p>
+        <p><%= link_to "Down" %></p>
+    </div>
+
     <div class="questions">
         <p><%= link_to question.title, question_path(question) %></p>
-        <div class="voting">
-            <p><%= link_to "Up" %></p>
-            <p><%= link_to "Down" %></p>
-        </div>
     </div>
 </div>
 <% end %>
