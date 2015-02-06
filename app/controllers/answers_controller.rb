@@ -9,7 +9,7 @@ class AnswersController < ApplicationController
   def get_answer
     @answer = @question.answers.find(params[:id])
   end
-#########################################################
+####################################################
   def create
     @question.answers.create(answer_params)
 
@@ -27,7 +27,7 @@ class AnswersController < ApplicationController
 
     redirect_to question_path(@question)
   end
-##########################################################
+####################################################
   private
 
   def answer_params
