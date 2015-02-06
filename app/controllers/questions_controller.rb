@@ -37,10 +37,14 @@ class QuestionsController < ApplicationController
 
   def upvote
     @question.increment!(:vote)
+
+    # redirect_to :action => index
   end
 
   def downvote
     @question.decrement!(:vote)
+
+    # redirect_to :action => index
   end
 #############################################
   private

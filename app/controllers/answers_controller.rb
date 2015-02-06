@@ -1,13 +1,25 @@
 class AnswersController < ApplicationController
+  before_action :get_question
+
+  def get_question
+    @question = Question.find(params[:question_id])
+  end
 
   def create
-    @question = Question.find(params[:question_id])
-    @answer = @question.answers.new(answer_params)
-    @answer.save
+    @question.answers.create(answer_params)
 
     redirect_to question_path(@question)
   end
 
+  def upvote
+    @question.answers.increment!(:vote)
+  end
+
+  def downvote
+    @question.answers.decrement!(:vote)
+  end
+
+##########################################################
   private
 
   def answer_params
