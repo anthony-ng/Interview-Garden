@@ -25,18 +25,18 @@ function ListenForAnswerVote() {
   })
 }
 
-function ListenForQuestionVote() {
-  $(".voting").on("click", function(event){
+function ListenForQuestionForm() {
+  $(".index_table").on("click", function(event){
     event.preventDefault();
-    console.log("Inside ListenForQuestionVote function");
+    console.log("Inside ListenForQuestionForm function");
 
   })
 }
 
-function ListenForQuestionVote() {
+function ListenForAnswerForm() {
   $(".voting").on("click", function(event){
     event.preventDefault();
-    console.log("Inside ListenForQuestionVote function");
+    console.log("Inside ListeListenForAnswerFormnForQuestionVote function");
 
   })
 }
