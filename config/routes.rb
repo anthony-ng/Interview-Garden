@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root :to => "questions#index"
+  root :to => "questions#show", :id => 1
 
   resources :questions do
     member do
