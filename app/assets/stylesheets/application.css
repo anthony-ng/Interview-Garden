@@ -56,28 +56,28 @@
   width: 80%;
 }
 
-.questions {
+.title {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.questions p, .answers p {
+.title p, .questions p, .answers p {
   padding-left: 30px;
   font-size: 1.3em;
   color: #0077CC;
   margin: 0 auto;
 }
 
-.questions a, .answers a {
+.title a, .questions a, .answers a {
   color: inherit;
 }
 
-.questions a:link, .answers a:link {
+.title a:link, .questions a:link, .answers a:link {
   text-decoration: none;
 }
 
-.questions a:hover, .answers a:hover {
+.title a:hover, .questions a:hover, .answers a:hover {
   text-decoration: none;
   color: #30A7FC;
 }
