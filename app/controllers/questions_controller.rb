@@ -20,7 +20,7 @@ class QuestionsController < ApplicationController
   def create
     @question = Question.create(question_params)
 
-    redirect_to :action => :index
+    redirect_to questions_path
   end
 
   def update
@@ -38,13 +38,13 @@ class QuestionsController < ApplicationController
   def upvote
     @question.increment!(:vote)
 
-    # redirect_to :action => index
+    redirect_to questions_path
   end
 
   def downvote
     @question.decrement!(:vote)
 
-    # redirect_to :action => index
+    redirect_to questions_path
   end
 #############################################
   private
