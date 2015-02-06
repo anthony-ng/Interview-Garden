@@ -1,11 +1,15 @@
 class AnswersController < ApplicationController
   before_action :get_question
+  before_action :get_answer, only:[:upvote, :downvote]
 
   def get_question
     @question = Question.find(params[:question_id])
   end
-#########################################################
 
+  def get_answer
+    @answer = @question.answers.find(params[:id])
+  end
+#########################################################
   def create
     @question.answers.create(answer_params)
 
@@ -13,17 +17,16 @@ class AnswersController < ApplicationController
   end
 
   def upvote
-    @question.answers.increment!(:vote)
+    @answer.increment!(:vote)
 
-    redirect_to question
+    redirect_to question_path(@question)
   end
 
   def downvote
-    @question.answers.decrement!(:vote)
+    @answer.decrement!(:vote)
 
-    redirect_to question
+    redirect_to question_path(@question)
   end
-
 ##########################################################
   private
 
