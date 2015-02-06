@@ -34,7 +34,7 @@ function ListenForQuestionForm() {
 }
 
 function ListenForAnswerForm() {
-  $(".voting").on("click", function(event){
+  $("#create_answer").on("submit", function(event){
     event.preventDefault();
     console.log("Inside ListenForAnswerForm function");
 
