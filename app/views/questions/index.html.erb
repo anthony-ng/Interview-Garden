@@ -4,29 +4,31 @@
         <th><h3><%= link_to "Ask Question?", new_question_path %></h3></th>
     </tr>
 </table>
-<% @questions.each do |question| %>
-<div class="session" data-question-id="<%= question.id %>">
-    <p class="divisor"></p>
-    <div class="q_votes">
-        <%= question.vote %> <br>
-        <div>votes</div>
-    </div>
-    <div class="status">
-        <%= question.answers.size %> <br>
-        <div>answers</div>
-    </div>
-    <div class="views">
-        <%= rand(1..1000) %> <br>
-        <div>views</div>
-    </div>
+<div id="questions_container">
+    <% @questions.each do |question| %>
+    <div class="single_question" data-question-id="<%= question.id %>">
+        <p class="divisor"></p>
+        <div class="q_votes">
+            <%= question.vote %> <br>
+            <div>votes</div>
+        </div>
+        <div class="status">
+            <%= question.answers.size %> <br>
+            <div>answers</div>
+        </div>
+        <div class="views">
+            <%= rand(1..1000) %> <br>
+            <div>views</div>
+        </div>
 
-    <div class="voting">
-        <p><%= link_to "Up", upvote_question_path(question), method: :post %></p>
-        <p><%= link_to "Down", downvote_question_path(question), method: :post %></p>
-    </div>
+        <div class="voting">
+            <p><%= link_to "Up", upvote_question_path(question), method: :post, remote: true %></p>
+            <p><%= link_to "Down", downvote_question_path(question), method: :post, remote: true %></p>
+        </div>
 
-    <div class="title">
-        <p><%= link_to question.title, question_path(question) %></p>
+        <div class="title">
+            <p><%= link_to question.title, question_path(question) %></p>
+        </div>
     </div>
+    <% end %>
 </div>
-<% end %>
