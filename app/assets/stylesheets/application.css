@@ -50,6 +50,9 @@
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-20%);
 }
 
 .logo {
@@ -101,6 +104,23 @@
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
+}
+
+.answer_voting p {
+  border: 1px solid;
+  border-color: rgba(111,111,111,0.2) transparent transparent;
+  border-radius: 35px;
+  background-color: #DAE6EF;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.answer_voting {
+  position: relative;
+  top: 50%;
+  transform: translateY(-5%);
 }
 
 .voting a{
