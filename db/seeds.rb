@@ -3,10 +3,10 @@
 
 require 'faker'
 
-10.times do
-  Question.create(title: Faker::Hacker.say_something_smart + "?", content: Faker::Lorem.sentences)
+20.times do
+  Question.create(title: Faker::Hacker.say_something_smart + "?", content: Faker::Lorem.sentences(5).join(" "))
 end
 
-20.times do
-  Answer.create(title: Faker::Hacker.say_something_smart, content: Faker::Lorem.sentences, question_id: rand(1..10))
+50.times do
+  Answer.create(title: Faker::Hacker.say_something_smart, content: Faker::Lorem.sentences(5).join(" "), question_id: rand(1..20))
 end
