@@ -2,18 +2,41 @@ $(document).ready(function() {
 
   ListenForQuestionVote()
   // ListenForAnswerVote()
-
   // ListenForQuestionForm()
   // ListenForAnswerForm()
 
 });
 
 function ListenForQuestionVote() {
-  $("#questions_container").on(".link_to", function(event){
+  $(".voting").on("click", function(event){
+    event.preventDefault();
     console.log("Inside ListenForQuestionVote function");
-    // event.preventDefault();
 
   })
 }
 
 console.log("Outside!")
+
+function ListenForAnswerVote() {
+  $(".answer_voting").on("click", function(event){
+    event.preventDefault();
+    console.log("Inside ListenForAnswerVote function");
+
+  })
+}
+
+function ListenForQuestionVote() {
+  $(".voting").on("click", function(event){
+    event.preventDefault();
+    console.log("Inside ListenForQuestionVote function");
+
+  })
+}
+
+function ListenForQuestionVote() {
+  $(".voting").on("click", function(event){
+    event.preventDefault();
+    console.log("Inside ListenForQuestionVote function");
+
+  })
+}
