@@ -8,8 +8,8 @@ As the render method iterates over the @question.answers collection, it assigns 
   votes
 </div>
 <div class="answer_voting">
-  <p><%= link_to "Up" %></p>
-  <p><%= link_to "Down" %></p>
+  <p><%= link_to "Up", upvote_question_answer, method: :post %></p>
+  <p><%= link_to "Down", downvote_question_answer, method: :post %></p>
 </div>
 <div class="answer_content">
   <h3><%= answer.title %></h3>

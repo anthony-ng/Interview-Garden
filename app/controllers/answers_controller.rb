@@ -14,10 +14,14 @@ class AnswersController < ApplicationController
 
   def upvote
     @question.answers.increment!(:vote)
+
+    redirect_to question
   end
 
   def downvote
     @question.answers.decrement!(:vote)
+
+    redirect_to question
   end
 
 ##########################################################
