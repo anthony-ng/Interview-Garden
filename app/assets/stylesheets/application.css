@@ -43,8 +43,9 @@
 
 .a_votes {
   border: 1px solid black;
+  border-radius: 55px;
   padding-top: 10px;
-  width: 60px;
+  width: 50px;
   height: 40px;
   margin-left: 50px;
   text-align: center;
