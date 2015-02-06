@@ -38,6 +38,12 @@ class QuestionsController < ApplicationController
   def upvote
     @question.increment!(:vote)
 
+    respond_to do |format|
+      format.html
+      format.js
+      format.json {render json: @question}
+    end
+
     redirect_to questions_path
   end
 
