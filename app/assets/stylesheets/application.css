@@ -14,12 +14,21 @@
  *= require_self
  */
 .header {
-  display: inline-block;
+  /*display: inline-block;*/
+}
+
+.header h1, h3 {
+  font-weight: normal;
+  font-family: 'Helvetica Neue';
 }
 
 .header h1 {
-  font-weight: normal;
-  font-family: 'Helvetica Neue';
+  float: left;
+}
+
+.header h3 {
+  float: right;
+  padding-top: 12px;
 }
 
 .header b {
