@@ -10,9 +10,16 @@ $(document).ready(function() {
 function ListenForQuestionVote() {
   $(".voting").on("click", function(event){
     event.preventDefault();
-    alert("Inside ListenForQuestionVote function");
-
-  })
+    var $clicked = $(this)
+    $.ajax({
+      url: this.action,
+      type: this.method
+    }).success(function(response){
+      console.log("AJAX!")
+    }).fail(function(response){
+      console.log("Nope!")
+    });
+  });
 };
 
 console.log("Outside!")
