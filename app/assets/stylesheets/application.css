@@ -13,9 +13,6 @@
  *= require_tree .
  *= require_self
  */
-.header {
-  /*display: inline-block;*/
-}
 
 .header h1, h3 {
   font-weight: normal;
