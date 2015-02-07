@@ -17,6 +17,9 @@ gem 'faker'
 
 gem 'rails_12factor', group: :production
 
+# Count views
+gem 'impressionist'
+
 gem 'rspec-rails'
 
 gem 'capybara'
