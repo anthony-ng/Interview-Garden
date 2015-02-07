@@ -168,6 +168,10 @@
   margin: 0 300px;
 }
 
+.new_form fieldset {
+  width: 742px;
+}
+
 .new_form input, textarea, legend, label {
   font-size: 1.5em;
 }

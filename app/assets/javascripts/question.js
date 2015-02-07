@@ -46,7 +46,7 @@ function ListenForAnswerVote() {
 function ListenForQuestionForm() {
   $("#create_question").on("click", function(event){
     // event.preventDefault();
-    alert("Inside ListenForQuestionForm function");
+    // alert("Inside ListenForQuestionForm function");
     console.log("Inside ListenForQuestionForm function");
 
   })
@@ -55,7 +55,7 @@ function ListenForQuestionForm() {
 function ListenForAnswerForm() {
   $("#create_answer").on("submit", function(event){
     // event.preventDefault();
-    alert("Inside ListenForAnswerForm function");
+    // alert("Inside ListenForAnswerForm function");
     console.log("Inside ListenForAnswerForm function");
 
   })
