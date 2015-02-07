@@ -4,6 +4,8 @@ class QuestionsController < ApplicationController
   def get_question
     @question = Question.find(params[:id])
   end
+
+  impressionist :actions=>[:show,:index]
 #############################################
   def index
     @questions = Question.all
