@@ -15,7 +15,7 @@ function ListenForQuestionVote() {
       url: this.action,
       type: this.method
     }).success(function(response){
-      console.log("AJAX!")
+      console.log("AJAX Question Vote")
     }).fail(function(response){
       console.log("Nope!")
     });
@@ -26,10 +26,17 @@ console.log("Outside!")
 
 function ListenForAnswerVote() {
   $(".answer_voting").on("click", function(event){
-    // event.preventDefault();
-    alert("Inside ListenForAnswerVote function");
-
-  })
+    event.preventDefault();
+    var $clicked = $(this)
+    $.ajax({
+      url: this.action,
+      type: this.method
+    }).success(function(response){
+      console.log("AJAX Answer Vote")
+    }).fail(function(response){
+      console.log("Nope!")
+    });
+  });
 };
 
 function ListenForQuestionForm() {
