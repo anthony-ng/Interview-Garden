@@ -29,6 +29,6 @@ Question.create(title: 'Merge Sorted Arrays', content: 'We have our lists of ord
 Question.create(title: 'Two Egg Problem', content: 'If an egg is dropped from above that floor, it will break. If it is dropped from that floor or below, it will be completely undamaged and you can drop the egg again. Given two eggs, find the highest floor an egg can be dropped from without breaking, with as few drops as possible.')
 Question.create(title: 'Simulate 5-sided die', content: 'You have a function rand7() that generates a random number from 1 to 7. Use it to write a function rand5() that generates a random number from 1 to 5.')
 
-50.times do
+100.times do
   Answer.create(title: Faker::Hacker.say_something_smart, content: Faker::Lorem.sentences(5).join(" "), question_id: rand(1..20))
 end
