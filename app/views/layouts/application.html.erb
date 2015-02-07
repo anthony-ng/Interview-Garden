@@ -7,7 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="header"><img src="/images/stackoverflow-logo.png" alt="logo" class="logo"></div>
+  <div class="header">
+    <img src="/images/stackoverflow-logo.png" alt="logo" class="logo">
+    <!-- <h1>Stack <b>Overflow</b></h1> -->
+  </div>
 
   <%= yield %>
   <p class="footer_link"><%= link_to 'Back to homepage', questions_path %></p>

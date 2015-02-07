@@ -17,6 +17,15 @@
   display: inline-block;
 }
 
+.header h1 {
+  font-weight: normal;
+  font-family: 'Helvetica Neue';
+}
+
+.header b {
+  color: red;
+}
+
 .header_name {
   width: 150px;
 }

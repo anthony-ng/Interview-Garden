@@ -50,6 +50,8 @@ class QuestionsController < ApplicationController
   def downvote
     @question.decrement!(:vote)
 
+    # render json: @question
+
     redirect_to questions_path
   end
 #############################################
