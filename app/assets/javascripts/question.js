@@ -15,7 +15,9 @@ function ListenForQuestionVote() {
       url: this.action,
       type: this.method
     }).success(function(response){
-      console.log("AJAX Question Vote")
+      console.log("AJAX Question Vote");
+      console.log(response)
+      $clicked.siblings('.vote').html(response.vote);
     }).fail(function(response){
       console.log("Nope!")
     });
@@ -32,7 +34,8 @@ function ListenForAnswerVote() {
       url: this.action,
       type: this.method
     }).success(function(response){
-      console.log("AJAX Answer Vote")
+      console.log("AJAX Answer Vote");
+      $clicked.siblings('.vote').html(response.vote);
     }).fail(function(response){
       console.log("Nope!")
     });
