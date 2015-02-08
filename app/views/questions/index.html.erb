@@ -30,7 +30,11 @@
             <p><%= link_to question.title, question_path(question) %></p>
         </div>
         <div class="created_time">
-            <p>Asked on <%= question.created_at %></p>
+            <% if (Time.now.to_i - Time.at(question.created_at.to_i).to_i)/(60*60) > 24 %>
+                <p>Asked <%= (Time.now.to_i - Time.at(question.created_at.to_i).to_i)/(60*60*24) %> days <%= ((Time.now.to_i - Time.at(question.created_at.to_i).to_i)/(60*60))%24 %> hours ago</p>
+            <% else %>
+                <p>Asked <%= ((Time.now.to_i - Time.at(question.created_at.to_i).to_i)/(60*60))%24 %> hours ago</p>
+            <% end %>
         </div>
     </div>
     <% end %>
