@@ -1,8 +1,28 @@
-# [Stack Underflow](https://stack-underflows.herokuapp.com)
+# [Interview Garden](https://interview-garden.herokuapp.com)
 
 ## Summary
 
-I built a substantial Ruby on Rails application from the ground up: a [StackOverflow](http://www.stackoverflow.com) clone.  My goal is to focus on building a well-structured Rails application with a good mixture of front-end and back-end features.
+Interview Garden is a social platform for preparing IT technical interviews. I strive to provide you with the best learning experience in preparing interviews for companies in the IT industry.
+
+To be successful in landing a software engineer job offer, I believe it is mainly repeating these three important steps:
+
+Share.  Read.  Interview.
+
+I strive to provide you the Interview Garden platform as the ultimate solution for preparing technical interviews.
+
+1. Share -> Share questions/solutions using the question/answer posting system.
+2. Read -> Read high quality questions/solutions featuring in-depth thought process.
+3. Interview -> Practice your thoughts about the problem with real interviewers.
+
+I hope that through my platform, you will grow into a Interview Ninja. Not only will you be successful in all of your interviews, and most importantly, you will be a smarter programmer in general !
+
+Contact <thomsonng123@gmail.com> for any question you may have and feedbacks are also warmly welcomed. 
+
+## Technologies
+
+- Ruby on Rails
+- JavaScript & jQuery
+- HTML5 & CSS3
 
 ## Features
 
