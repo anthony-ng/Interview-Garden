@@ -21,11 +21,13 @@
 
 .header h1 {
   float: left;
+  font-size: 2.5em;
 }
 
 .header h3 {
   float: right;
   padding-top: 12px;
+  text-align: right;
 }
 
 .header b {
@@ -35,6 +37,7 @@
 .header_name {
   width: 150px;
 }
+
 
 .single_question div{
   display: inline-block;
@@ -75,8 +78,15 @@
   width: 80%;
 }
 
+.created_time {
+  color: gray;
+  float: right;
+  position: relative;
+  padding-top: 35px;
+}
+
 .title {
-  width: 1000px;
+  /*width: 1000px;*/
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -155,7 +165,14 @@
   width: 100%;
 }
 .index_table h3 {
-  text-align: right;
+  /*text-align: right;*/
+  float: right;
+  border: 1px black solid;
+  /*border-radius: 35px;*/
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  background-color: #DAE6EF;
 }
 
 .index_table h2 {

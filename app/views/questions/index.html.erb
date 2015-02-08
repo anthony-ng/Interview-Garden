@@ -29,6 +29,9 @@
         <div class="title">
             <p><%= link_to question.title, question_path(question) %></p>
         </div>
+        <div class="created_time">
+            <p>Asked on <%= question.created_at %></p>
+        </div>
     </div>
     <% end %>
 </div>
