@@ -16,7 +16,7 @@ I strive to provide you the Interview Garden platform as the ultimate solution f
 
 I hope that through my platform, you will grow into a Interview Ninja. Not only will you be successful in all of your interviews, and most importantly, you will be a smarter programmer in general !
 
-Contact <thomsonng123@gmail.com> for any question you may have and feedbacks are also warmly welcomed. 
+Contact <thomsonng123@gmail.com> for any question you may have and feedbacks are also warmly welcomed.
 
 ## Technologies
 
@@ -39,15 +39,5 @@ Contact <thomsonng123@gmail.com> for any question you may have and feedbacks are
 - Created answer upvote links on question show page
 - Created answer downvote links on question show page
 - Displayed answer vote totals on question show page
-
-### Learning Competencies
-
-- Create a Rails application from scratch
-- Write tests for a Rails application, using rspec and related libraries
-- Use Rails form and view helpers
-- Utilize incremental DB migrations
-- Map complex and non-standard relationships using ActiveRecord
-- Work with APIs using raw HTTP requests
-- Use Rails initializers
-- Utilize AJAX requests within Rails
-- Create a JS widget using Javascript best practices and design patterns
+- Displayed question created day & time in x days x hours format
+- Displayed view count for each question
