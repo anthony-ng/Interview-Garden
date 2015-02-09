@@ -6,12 +6,12 @@ Interview Garden is a social platform for preparing IT technical interviews. I s
 
 To be successful in landing a software engineer job offer, I believe it is mainly repeating these three important steps:
 
-Share.  Read.  Interview.
+Share.  Practice.  Interview.
 
 I strive to provide you the Interview Garden platform as the ultimate solution for preparing technical interviews.
 
 1. Share -> Share questions/solutions using the question/answer posting system.
-2. Read -> Read high quality questions/solutions featuring in-depth thought process.
+2. Practice -> Practice high quality questions/solutions featuring in-depth thought process.
 3. Interview -> Practice your thoughts about the problem with real interviewers.
 
 I hope that through my platform, you will grow into a Interview Ninja. Not only will you be successful in all of your interviews, and most importantly, you will be a smarter programmer in general !
