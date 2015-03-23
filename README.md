@@ -18,9 +18,8 @@ I hope that through my platform, you will grow into a Interview Ninja. Not only 
 
 ## Technologies
 
-- Ruby on Rails
-- JavaScript & jQuery
-- HTML5 & CSS3
+- Back-End: Ruby on Rails
+- Front-End: JavaScript, jQuery/AJAX, HTML5 & CSS3
 
 ## Features
 
